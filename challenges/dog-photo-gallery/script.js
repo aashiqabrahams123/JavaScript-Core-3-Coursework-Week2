@@ -2,7 +2,6 @@ const btn = document.getElementById('btn');
 let li = document.createElement('li')
 let img = document.createElement('img')
 
-
 function getDogImage() {
     fetch('https://dog.ceo/api/breeds/image/random').then(function (response) {
         return response.json();
@@ -19,3 +18,9 @@ function getDogImage() {
         console.log(error);
     });
 }
+
+btn.addEventListener('click', () => {
+    getDogImage();
+});
+
+window.onload = getDogImage;
