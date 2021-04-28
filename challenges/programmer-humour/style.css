@@ -1,0 +1,17 @@
+body {
+  background-color: orange;
+}
+
+h1 {
+  text-align: left;
+  font-family: fantasy;
+}
+
+#h2 {
+  text-align: left;
+}
+
+#div {
+  display: flex;
+  justify-content: left;
+}
